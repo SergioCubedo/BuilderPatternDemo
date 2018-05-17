@@ -1,0 +1,31 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package builderpatterndemo;
+
+/**
+ *
+ * @author alu20490610w
+ */
+public class MealBuilder {
+
+    public Meal prepareVegMeal() {
+        Meal meal = new Meal();
+        meal.addItem(new VegBurger());
+        meal.addItem(new Coke());
+        return meal;
+    }
+
+    public Meal prepareNonVegMeal() {
+        Meal meal = new Meal();
+        meal.addItem(new ChickenBurger());
+        meal.addItem(new Pepsi());
+        return meal;
+    }
+
+    Meal prepVegMeal() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+}
